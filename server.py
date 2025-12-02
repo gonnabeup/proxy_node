@@ -3,8 +3,8 @@ import json
 import logging
 from typing import Dict, Set, Optional
 from aiohttp import web
-from .config import PROXY_HOST, PROXY_API_HOST, PROXY_API_PORT, PROXY_API_TOKEN, PROXY_NODE_NAME, CACHE_ENABLED
-from .models import init_local_db, get_local_session, PortCache
+from config import PROXY_HOST, PROXY_API_HOST, PROXY_API_PORT, PROXY_API_TOKEN, PROXY_NODE_NAME, CACHE_ENABLED
+from models import init_local_db, get_local_session, PortCache
 
 logger = logging.getLogger(__name__)
 
