@@ -1,8 +1,8 @@
 import asyncio
 import logging
 import io
-from .server import ProxyNode
-from .config import PROXY_API_HOST, PROXY_API_PORT, PROXY_API_TOKEN
+from server import ProxyNode
+from config import PROXY_API_HOST, PROXY_API_PORT, PROXY_API_TOKEN
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s', handlers=[logging.StreamHandler(io.TextIOWrapper(__import__('sys').stdout.buffer, encoding='utf-8', errors='ignore'))])
 
