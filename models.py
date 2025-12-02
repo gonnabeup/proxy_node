@@ -38,7 +38,7 @@ class PortCache(Base):
 
 def init_db(db_url=None):
     if db_url is None:
-        from .config import DATABASE_URL
+        from config import DATABASE_URL
         db_url = DATABASE_URL
     eng = create_engine(db_url)
     return eng
@@ -49,7 +49,7 @@ def get_session(engine):
 
 def init_local_db(db_url=None):
     if db_url is None:
-        from .config import LOCAL_DATABASE_URL
+        from config import LOCAL_DATABASE_URL
         db_url = LOCAL_DATABASE_URL
     eng = create_engine(db_url)
     return eng
